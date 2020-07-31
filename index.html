@@ -16,10 +16,19 @@
             <br>
             <input type="password" class="form-control" name="" id="" placeholder="Enter Password">
             <br>
-            <button class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
 
     </div>
+    <script>
+        const loginBtn= document.getElementById("login");
+        loginBtn.addEventListener("mouseleave",function(){
+        //console.log("Click Check")
+        //remove element
+        const loginArea = document.getElementById("login-area");
+        loginArea.style.display = "none";
+        })
+    </script>
     
 </body>
 </html>
